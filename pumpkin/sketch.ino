@@ -2,7 +2,10 @@
 #define PIN_B 2
 #define PIN_G 1
 
+
+// the setup function runs once when you press reset or power the board
 void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
   pinMode(PIN_R, OUTPUT);
   pinMode(PIN_G, OUTPUT);
   pinMode(PIN_B, OUTPUT);
@@ -28,9 +31,9 @@ void fadeVal(int pin, int startVal, int endVal, int period) {
 
 int greenValue = 255;
 
-// Woobly orange-redish light
 void loop() {
-  int nextGreenValue = random(0, 10); 
-  fadeVal(PIN_G, nextGreenValue, nextGreenValue, 150);
+  int nextGreenValue = random(20, 200);
+  int period = random(0, 10);
+  fadeVal(PIN_G, greenValue, nextGreenValue, period);
   greenValue = nextGreenValue;
 }
