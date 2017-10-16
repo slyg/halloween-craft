@@ -30,10 +30,16 @@ void fadeVal(int pin, int startVal, int endVal, int period) {
 }
 
 int greenValue = 255;
+int blueValue = 0;
+int redValue = 0;
 
 void loop() {
-  int nextGreenValue = random(20, 200);
+  int nextGreenValue = random(0, 255);
+  int nextBlueValue = random(0, 255);
+  int nextRedValue = random(0, 255);
   int period = random(0, 10);
   fadeVal(PIN_G, greenValue, nextGreenValue, period);
+  fadeVal(PIN_G, blueValue, nextBlueValue, period);
+  fadeVal(PIN_G, redValue, nextRedValue, period);
   greenValue = nextGreenValue;
 }
