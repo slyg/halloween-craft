@@ -1,5 +1,5 @@
 
-The eyes/faces turn on on motion detection.
+The spooky eyes/faces turn on on motion detection.
 
 ![24195282888_4c1f489fdc_z](https://user-images.githubusercontent.com/602143/32196039-33941f24-bdb7-11e7-87f1-cfe5f0f8878b.jpg)
 
